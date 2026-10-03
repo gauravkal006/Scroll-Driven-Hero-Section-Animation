@@ -38,14 +38,26 @@ body {
 /* ---------- Hero ---------- */
 
 .hero {
-  --road-h: clamp(112px, 26vh, 232px);
+  --road-h: clamp(96px, 15vh, 140px);
   /* hidden until the intro timeline takes over, avoids a flash of final state */
   visibility: hidden;
 }
 
 .headline {
-  font-size: min(6.4vw, calc(var(--road-h) * 0.62));
+  font-size: min(5vw, calc(var(--road-h) * 0.62));
+  font-stretch: 100%;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    --road-h: clamp(112px, 26vh, 232px);
+  }
+
+  .headline {
+    font-size: min(6.4vw, calc(var(--road-h) * 0.62));
+    font-stretch: 125%;
+  }
 }
 
 .headline-ghost {

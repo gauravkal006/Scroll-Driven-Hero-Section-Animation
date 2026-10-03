@@ -212,6 +212,14 @@ export default function Hero() {
         <span className="font-wide text-lg font-extrabold tracking-tight md:text-xl">
           itzfizz<span className="text-flame">.</span>
         </span>
+        <a
+          href="https://github.com/gauravkal006/Scroll-Driven-Hero-Section-Animation"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-full border border-ink/15 px-3.5 py-1.5 text-[13px] font-medium transition-colors hover:border-ink hover:bg-ink hover:text-paper md:px-4 md:text-sm"
+        >
+          View source ↗
+        </a>
       </header>
 
       <div className="flex h-full flex-col pt-14 md:pt-16">
