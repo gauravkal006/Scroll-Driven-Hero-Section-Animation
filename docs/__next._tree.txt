@@ -1,0 +1,4 @@
+:HL["/Scroll-Driven-Hero-Section-Animation/_next/static/chunks/23us4wh5waxzi.css","style"]
+:HL["/Scroll-Driven-Hero-Section-Animation/_next/static/media/051742360c26797e-s.p.1bkzbscqrt8rl.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Scroll-Driven-Hero-Section-Animation/_next/static/media/21ca8f3f56c22ca2-s.p.1cp9-4nby68jc.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"R584rYKb_IaJfUBV5oSVe"}

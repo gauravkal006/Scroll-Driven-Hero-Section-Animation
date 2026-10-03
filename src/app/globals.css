@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+@theme {
+  --color-paper: #ebe9e4;
+  --color-ink: #111111;
+  --color-road: #161616;
+  --color-lime: #c8f53c;
+  --color-sky: #92d1ff;
+  --color-flame: #ff6a2b;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-lime);
+  color: var(--color-ink);
+}
+
+/* Expanded cut of Archivo for display type */
+.font-wide {
+  font-stretch: 125%;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  --road-h: clamp(112px, 26vh, 232px);
+  /* hidden until the intro timeline takes over, avoids a flash of final state */
+  visibility: hidden;
+}
+
+.headline {
+  font-size: min(6.4vw, calc(var(--road-h) * 0.62));
+  line-height: 1;
+}
+
+.headline-ghost {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(255 255 255 / 0.32);
+}
+
+.scroll-dot {
+  animation: scroll-dot 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+@keyframes scroll-dot {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(36px);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-dot {
+    animation: none;
+  }
+}
